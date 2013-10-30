@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: InternalsVisibleTo("WebAPI.OutputCache.Tests")]
+[assembly: InternalsVisibleTo( "WebAPI.OutputCache.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100bb63cac1a38c4e92f7615d16636da63f502bb8ba0acd6e78f2b5825cc49d5f8af828ae496118f8e752f5b79ed5865760ac93b3da0e0e42ceacfee83c4c747f9b4a7190e3e1fc23600a2b35bcf9b33226cac2f1bf7c17a6f34e63e6b38fbbd00944191a6a5c3a018f66bbc3f8886e7287aa012e04bbc63ecfcf9493668b9f76d2" )]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
