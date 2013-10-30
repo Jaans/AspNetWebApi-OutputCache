@@ -37,6 +37,12 @@
     <DocumentationFile>bin\Release\WebApi.OutputCache.V2.xml</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\WebAPI.OutputCache.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -71,6 +77,9 @@
     <Compile Include="TimeAttributes\CacheOutputUntilToday.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\WebAPI.OutputCache.snk">
+      <Link>WebAPI.OutputCache.snk</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>

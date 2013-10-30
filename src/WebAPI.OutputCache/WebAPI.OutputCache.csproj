@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\WebAPI.OutputCache.XML</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\WebAPI.OutputCache.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -70,6 +76,9 @@
     <Compile Include="TimeAttributes\CacheOutputUntilToday.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\WebAPI.OutputCache.snk">
+      <Link>WebAPI.OutputCache.snk</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
